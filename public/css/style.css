@@ -1,0 +1,255 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*
+/////////////
+body-inicio
+/////////////
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+/*
+/////////////
+header-inicio
+/////////////
+*/
+.nav-bar{
+    display: none;
+}
+
+header {
+    background-color: #fff159;
+}
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+
+    width: 50%;
+
+}
+
+.burger-menu {
+    text-align: center;
+    font-size: 25px;
+    background-color: #0044aa;
+    padding: 7px;
+    border-radius: 8px;
+    margin: auto;
+    width: 44px;
+
+}
+
+.search {
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 13px;
+    padding: 1px;
+    display: inline-block;
+    width: 50%;
+    text-align: end;
+}
+
+.search i {
+    border-left: solid 1px black;
+    padding: 2.5px;
+    font-size: 1.5rem;
+    padding-left: 8px;
+}
+
+.logo-search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*
+/////////////
+main-inicio
+/////////////
+*/
+main h3 {
+    font-size: 24px;
+    color: #616369;
+}
+
+main b {
+    font-size: 16px;
+   opacity: 0%;
+}
+
+
+main p {
+    font-size: 18px;
+    width: 50%;
+}
+
+main div {
+    font-size: 16px;
+    width: 50%;
+}
+
+main {
+    margin: auto;
+    width: 90vw;
+}
+
+.off-price-desc {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+
+}
+
+.off-price-desc div {
+    color: #34b24c;
+
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
+}
+
+main article {
+    background-color: white;
+    margin-bottom: 5px;
+    transition: all, 460ms;
+}
+.off-price-desc b{
+    transition: all, 460ms;
+}
+.off-price-desc i{
+    transition: all 460ms;
+}
+main article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main article:hover .off-price-desc b {
+    opacity: 100%;
+}
+main article:hover .off-price-desc i {
+   transform: rotate(-90deg);
+}
+
+
+
+
+
+
+
+/*
+/////////////
+footer-inicio
+/////////////
+*/
+footer {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 6px rgb(100, 100, 100);
+}
+
+footer i {
+    font-size: 2em;
+}
+
+
+
+   /*Tablets*/
+
+@media (min-width:768px) {
+    .nav-bar{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    ul{
+        display: flex;
+    }
+
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    main section h3 {
+        width: 100%;
+        margin: 16px;
+    }
+
+    main section article {
+        margin: 15px;
+        width: 44%;
+    }
+    .burger-menu{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-search{
+        width: 60%;
+
+    }
+    .slogan{
+        font-size: 15px;
+    }
+
+}
+/*Desktop*/
+@media (min-width:1024px) {
+
+    
+    main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+
+    main section h3 {
+        width: 100%;
+        margin: 16px;
+    }
+
+    main section article {
+        margin: 10px;
+        width: 22.8%;
+    }
+}

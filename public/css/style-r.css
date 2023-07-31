@@ -1,0 +1,107 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff159;
+    margin-bottom: 2rem;
+}
+
+header img {
+    width: 20%;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-art {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.form-art label {
+    width: 100%;
+}
+input{
+    border: 0;
+    margin-top: 5px;
+    outline: none;
+}
+#NyA,
+#Name-u,
+#fecha-n,
+#Domicilio,
+#contraseña,
+#conf-contraseña{
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.buttom{
+    justify-content: space-around;
+}
+.buttom input{
+    background-color: white;
+    border-radius: 5px;
+    padding: 4px;
+}
+input:focus{
+    border: 2.5px solid  #3483fa;
+}
+.user-type{
+    justify-content: space-around;
+}
+#intereses{
+    margin: 18px;
+}
+.intereses label{
+    font-weight: 100;
+}
+footer {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 6px rgb(100, 100, 100);
+}
+
+footer i {
+    font-size: 2em;
+}
+#NyA:hover,
+#Name-u:hover,
+#fecha-n:hover,
+#Domicilio:hover,
+#contraseña:hover,
+#conf-contraseña:hover,
+.buttom input:hover{
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+}
+
+@media(min-width:768px){
+form{
+    width: 40%;
+}
+}
+@media(min-width:1024px){
+form{
+    width: 25%;
+}
+}
