@@ -52,15 +52,19 @@ input {
     width: 100%;
     height: 35px;
     cursor: pointer;
+    transition: background-color 500ms;
 
 }
 input:focus{
     border: 2.5px solid  rgb(25, 125, 255);
 }
-.boton button:hover,
+.boton button:hover{
+    background-color: #2968c8;
+}
 input:hover{
     box-shadow: 0 0 0 1px rgba(0,0,0,.25);
 }
+
 @media(min-width:768px){
 form{
     width: 40%;
